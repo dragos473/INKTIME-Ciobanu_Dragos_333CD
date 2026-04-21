@@ -79,3 +79,40 @@ Toate perifericele I2C sunt pe acelasi bus, pe pinii P0.06 (SDA) si P0.07 (SCL).
 | MAX17048 | 0x36 | Fuel gauge |
 | BMA423 | 0x18 | Accelerometru |
 | DRV2605 | 0x5A | Driver haptic |
+
+## Pinii nRF52840
+
+| Pin | Pad | Semnal | Descriere |
+|-----|-----|--------|-----------|
+| P0.00 | D2 | XL1 | Intrare cristal 32.768kHz |
+| P0.01 | F2 | XL2 | Iesire cristal 32.768kHz |
+| P0.02 | A12 | SCK | SPI clock catre display e-paper |
+| P0.03 | B13 | MOSI | SPI data catre display e-paper |
+| P0.05 | K2 | EPD_CS | SPI chip select pentru display |
+| P0.06 | L1 | SDA | I2C data (bus comun) |
+| P0.07 | M2 | SCL | I2C clock (bus comun) |
+| P0.08 | N1 | IMU_INT1 | Interrupt 1 de la BMA423 |
+| P0.10 | J24 | ALERT | Alerta baterie de la MAX17048 |
+| P0.11 | T2 | PMIC_INT | Interrupt de la BQ25180 |
+| P0.12 | U1 | HAPTIC_EN | Enable pentru DRV2605 |
+| P0.13 | AD8 | BTN_UP | Buton UP (active-low) |
+| P0.14 | AC9 | BTN_ENTER | Buton ENTER (active-low) |
+| P0.15 | AD10 | EPD_DC | Data/Command pentru display |
+| P0.16 | AC11 | EPD_RST | Reset display e-paper |
+| P0.17 | AD12 | EPD_BUSY | Busy flag display e-paper |
+| P0.18 | AC13 | RESET | Reset sistem |
+| P1.00 | AD22 | SWO | Serial Wire Output (debug) |
+| P1.01 | Y23 | PWR_EPD | Gate MOSFET alimentare display |
+| P1.02 | W24 | BTN_DOWN | Buton DOWN (active-low) |
+| P1.08 | P2 | IMU_INT2 | Interrupt 2 de la BMA423 |
+| AD2 | — | VBUS | Detectie USB VBUS |
+| AD4 | — | D- | USB data minus |
+| AD6 | — | D+ | USB data plus |
+| AA24 | — | SWDCLK | SWD clock (debug) |
+| AC24 | — | SWDIO | SWD data (debug) |
+| XC1/B24 | — | XC1 | Intrare cristal 32MHz |
+| XC2/A23 | — | XC2 | Iesire cristal 32MHz |
+| H23 | — | ANT | Iesire RF catre antena |
+| W1, B1, A22, AD14, AD23 | — | VDD | Alimentare 3.3V |
+| Y2 | — | VDDH | Alimentare 3.3V (high-voltage) |
+| B7, F23 | — | VSS/GND | Masa |
